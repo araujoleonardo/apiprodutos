@@ -3,10 +3,12 @@ package com.produtos.apirest.models;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -25,6 +27,9 @@ public class Produto implements Serializable{
 	private BigDecimal quantidade;
 	
 	private BigDecimal valor;
+	
+	@ManyToOne
+	private Categoria categoria;
 
 	
 	
@@ -59,5 +64,14 @@ public class Produto implements Serializable{
 	public void setValor(BigDecimal valor) {
 		this.valor = valor;
 	}
+
+	public Categoria getCategoria() {
+		return categoria;
+	}
+
+	public void setCategoria(Categoria categoria) {
+		this.categoria = categoria;
+	}
+	
 	
 }
