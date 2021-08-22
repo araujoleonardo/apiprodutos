@@ -6,4 +6,5 @@ import com.produtos.apirest.models.Categoria;
 
 public interface CategoriaRepository extends JpaRepository<Categoria, Long> {
 
+	Categoria findById(long id);
 }
