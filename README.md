@@ -12,6 +12,8 @@ Para desenvolver esta API Rest foram utilizadas as seguintes ferramentas
 
 3 - Java jdk-11.0.12
 
-4 - Teste dos Métodos com Postman
+4 - Banco local com PostgreSQL
+
+5 - Teste dos Métodos com Postman
 
 ![Postman](https://user-images.githubusercontent.com/38969388/130367708-a3b40bea-481f-44f9-aa43-c76d311251fd.png)
